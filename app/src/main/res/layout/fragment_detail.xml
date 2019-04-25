@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="school"
+            type="com.nyc.schools.model.School" />
+
+        <variable
+            name="schoolScore"
+            type="com.nyc.schools.model.SchoolScore" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp25"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:layout_toLeftOf="@+id/fav_icon"
+                    android:contentDescription="@{school.schoolName}"
+                    android:ellipsize="end"
+                    android:foregroundGravity="left"
+                    android:gravity="center_horizontal"
+                    android:maxLines="5"
+                    android:singleLine="false"
+                    android:text="@{school.schoolName}"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/sp14"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/fav_icon"
+                    android:layout_width="@dimen/detail_fav_icon"
+                    android:layout_height="@dimen/detail_fav_icon"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dp2"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/favorite_this" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/satTestTakers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/dp2"
+                android:singleLine="true"
+                android:text="@{String.format(@string/sat_test_takers, schoolScore.numOfSatTestTakers)}"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/satMathAvgScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/dp2"
+                android:singleLine="true"
+                android:text="@{String.format(@string/sat_math_avg, schoolScore.satMathAvgScore)}"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/satReadingAvgScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/dp2"
+                android:singleLine="true"
+                android:text="@{String.format(@string/sat_reading_avg, schoolScore.satCriticalReadingAvgScore)}"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/satWritingAvgScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/dp2"
+                android:singleLine="true"
+                android:text="@{String.format(@string/sat_writing_avg, schoolScore.satWritingAvgScore)}"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:contentDescription="@{school.grades2018}"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/dp2"
+                android:singleLine="true"
+                android:text="@{String.format(@string/grade_2018, school.grades2018)}"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/graduationRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:contentDescription="@{school.graduationRate}"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/dp2"
+                android:singleLine="true"
+                android:text="@{String.format(@string/graduation_rate, school.graduationRate)}"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/interest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:contentDescription="@{school.interest1}"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/dp2"
+                android:singleLine="true"
+                android:text="@{String.format(@string/interest, school.interest1)}"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:contentDescription="@{school.schoolSports}"
+                android:ellipsize="end"
+                android:maxLines="6"
+                android:paddingLeft="@dimen/dp2"
+                android:singleLine="false"
+                android:text="@{String.format(@string/school_sport, school.schoolSports)}"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:contentDescription="@{school.overviewParagraph}"
+                android:ellipsize="end"
+                android:maxLines="20"
+                android:paddingLeft="@dimen/dp2"
+                android:singleLine="false"
+                android:text="@{String.format(@string/overview, school.overviewParagraph)}"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/sp14"
+                tools:text="St.Joseph School description." />
+
+            <TextView
+                android:id="@+id/extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:contentDescription="@{school.extracurricularActivities}"
+                android:ellipsize="end"
+                android:maxLines="10"
+                android:paddingLeft="@dimen/dp2"
+                android:singleLine="false"
+                android:text="@{String.format(@string/extra_ca, school.extracurricularActivities)}"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:autoLink="web"
+                android:contentDescription="@{school.website}"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/dp2"
+                android:singleLine="true"
+                android:text="@{String.format(@string/web, school.website)}"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/sp14"
+                tools:text="St.Joseph School description." />
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:autoLink="phone"
+                android:contentDescription="@{school.phoneNumber}"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/dp2"
+                android:singleLine="true"
+                android:text="@{String.format(@string/phone, school.phoneNumber)}"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/sp14"
+                tools:text="St.Joseph School description." />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp30"
+                android:layout_marginTop="@dimen/dp10"
+                android:contentDescription="@{school.schoolAddress}"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:paddingLeft="@dimen/dp2"
+                android:singleLine="false"
+                android:text="@{String.format(@string/address, school.schoolAddress)}"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/sp14"
+                tools:text="St.Joseph School description." />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

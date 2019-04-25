@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">NYC Schools</string>
+    <string name="school_details">School Details</string>
+
+    <string name="home">Home</string>
+    <string name="menu_all_schools">All Schools</string>
+    <string name="menu_fav_schools">Favorite Schools</string>
+    <string name="menu_sort_alpha">Sort Alphabetically</string>
+    <string name="menu_sort_grad_rate">Sort by Graduation Rate\n(descending order)</string>
+
+    <string name="empty_text_fav">No schools are favorited!</string>
+    <string name="empty_text">No schools found with this criteria.</string>
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">NO</string>
+
+    <string name="no_network_title">No Network</string>
+    <string name="no_network_message">No network detected. Please check and try again.</string>
+
+    <string name="loading">Loading...</string>
+    <string name="api_error_message">We have hit a snag, please try again.</string>
+    <string name="favorite_this">favorite this school</string>
+
+    <string name="alert">Alert</string>
+    <string name="favorites_alert">Favorites will be lost when refreshed.</string>
+
+    <!-- school details -->
+    <string name="overview">OVERVIEW: \n%s</string>
+    <string name="extra_ca">EXTRA CURRICULAR ACTIVITIES: \n%s</string>
+    <string name="grade_2018">2018 GRADE: \n%s</string>
+    <string name="phone">PHONE: %s</string>
+    <string name="web">WEB: %s</string>
+    <string name="total_students">TOTAL STUDENTS: %s</string>
+    <string name="interest">INTEREST: \n%s</string>
+    <string name="school_sport">SCHOOL SPORT: \n%s</string>
+    <string name="address">ADDRESS: \n%s</string>
+    <string name="graduation_rate">GRADUATION RATE: %s</string>
+
+    <string name="grade_2018_list">2018 Grade: %s</string>
+    <string name="graduation_rate_list">Graduation Rate: %s</string>
+
+    <!-- school score -->
+    <string name="sat_test_takers">NO.OF SAT TEST TAKERS: \n%s</string>
+    <string name="sat_math_avg">SAT MATH AVG SCORE: \n%s</string>
+    <string name="sat_reading_avg">SAT CRITICAL READING AVG SCORE: \n%s</string>
+    <string name="sat_writing_avg">SAT WRITING AVG SCORE: \n%s</string>
+
+</resources>

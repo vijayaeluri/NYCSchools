@@ -1,0 +1,35 @@
+<resources>
+    <dimen name="dp2">2dp</dimen>
+    <dimen name="dp4">4dp</dimen>
+    <dimen name="dp8">8dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="dp13">13dp</dimen>
+    <dimen name="dp14">14dp</dimen>
+    <dimen name="dp16">16dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp25">25dp</dimen>
+    <dimen name="dp30">30dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+
+    <dimen name="sp8">8sp</dimen>
+    <dimen name="sp10">10sp</dimen>
+    <dimen name="sp12">12sp</dimen>
+    <dimen name="sp14">16sp</dimen>
+    <dimen name="sp16">14sp</dimen>
+    <dimen name="sp18">18sp</dimen>
+    <dimen name="sp20">20sp</dimen>
+    <dimen name="sp22">22sp</dimen>
+    <dimen name="sp24">24sp</dimen>
+    <dimen name="sp30">20sp</dimen>
+    <dimen name="sp32">32sp</dimen>
+    <dimen name="loading_indicator_size">42dp</dimen>
+
+    <!-- List Sizes -->
+    <dimen name="list_text_size">16sp</dimen>
+
+    <!-- Icon Sizes -->
+    <dimen name="list_icon_small">20dp</dimen>
+    <dimen name="list_icon">80dp</dimen>
+    <dimen name="detail_fav_icon">80dp</dimen>
+</resources>

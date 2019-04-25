@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/all"
+        android:icon="@drawable/unfav"
+        android:title="@string/menu_all_schools"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/fav"
+        android:icon="@drawable/unfav"
+        android:title="@string/menu_fav_schools"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/sort_name"
+        android:icon="@drawable/unfav"
+        android:title="@string/menu_sort_alpha"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/sort_grade"
+        android:icon="@drawable/unfav"
+        android:title="@string/menu_sort_grad_rate"
+        app:showAsAction="ifRoom" />
+</menu>
